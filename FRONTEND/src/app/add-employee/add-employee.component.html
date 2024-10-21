@@ -1,0 +1,20 @@
+
+
+<div class="flex flex-col items-center justify-center ">
+    <h2 class="text-center text-3xl mt-5 text-cyan-600 font-bold">Add the employee here </h2>
+    <form action="" class="bg-slate-400 p-8 mt-4 border border-black rounded-lg w-96 h-auto" [formGroup]="formData">
+        <div class="flex flex-col justify-between">
+            <label for="first-name" class="text-white">First Name </label>
+            <input type="text" placeholder="Employee firstname" class="mb-4 p-2 border border-emerald-400 rounded-lg text-center" formControlName="firstname">
+            <label for="first-name" class="text-white">Last Name </label>
+            <input type="text" placeholder="Employee lastname" class="mb-4 p-2 border border-emerald-400 rounded-lg text-center" formControlName="lastname" >
+            <label for="first-name" class="text-white">Email </label>
+            <input type="email" placeholder="Employee email" class="mb-4 p-2 border border-emerald-400 rounded-lg text-center" formControlName="email">
+            <label for="first-name" class="text-white">Salary </label>
+            <input type="number" placeholder="Employee Salary" class="mb-4 p-2 border border-emerald-400 rounded-lg text-center" formControlName="empsalary">
+
+            <button class="bg-sky-400 p-4 text-2xl border border-green-400 rounded-md font-medium hover:bg-sky-500" (click)="addEmployee()">Submit</button>
+
+        </div>
+    </form>
+</div>
