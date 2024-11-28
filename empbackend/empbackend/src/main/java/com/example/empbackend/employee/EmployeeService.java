@@ -38,7 +38,7 @@ public class EmployeeService {
 
     void deleteEmp(Long empId){
         employeeRepository.findById(empId).ifPresentOrElse(employeeRepository::delete,
-                ()-> {throw new ResourceNotFoundException("employee not found");}
+                ()-> {throw new ResourceNotFoundException("employee record not found");}
 
         );
 
