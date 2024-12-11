@@ -66,7 +66,7 @@ public class EmployeeController {
         try {
             employeeService.deleteEmp(empId);
 
-            return new ResponseEntity<>("Empploye deleted success" ,HttpStatus.ACCEPTED);
+            return new ResponseEntity<>("Employee deleted successfully" ,HttpStatus.ACCEPTED);
         } catch (ResourceNotFoundException e) {
             throw new ResourceNotFoundException(e.getMessage());
         }
